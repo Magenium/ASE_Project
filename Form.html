@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/style.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <title>Appointment Form</title>
+   </head>
+
+<body>
+   <nav id="navigation">
+      <div class="wrapper">
+         <a class="logo" href="http://127.0.0.1:5500/ASE.html#home">
+            <img src="logoHUST_removebg.png" alt="HUSTLogo" width="170" height="50">
+         </a>
+
+         <div class="menu">
+            <ul>
+               <li>
+                  <a onclick="closeMenu()" href="http://127.0.0.1:5500/ASE.html#home">Home</a>
+               </li>
+               <li>
+                  <a onclick="closeMenu()" href="http://127.0.0.1:5500/ASE.html#services">Services</a>
+               </li>
+               <li>
+                  <a onclick="closeMenu()" href="http://127.0.0.1:5500/ASE.html#about">About</a>
+               </li>
+            </ul>
+
+            <a class="button" onclick="closeMenu()" href="#contact"
+               >HOTLINE</a
+            >
+
+            <ul class="social-links">
+               <li>
+                  <a target="_blank" href="https://www.instagram.com/hust_dhbkhanoi/">
+                     <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                           stroke="#FFFAF1"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                           stroke="#FFFAF1"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M17.5 6.49997H17.51"
+                           stroke="#FFFAF1"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a target="_blank" href="https://www.facebook.com/dhbkhanoi">
+                     <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                           stroke="#FFFAF1"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a target="_blank" href="https://www.youtube.com/@hust-bachkhoahanoi7719/featured">
+                     <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                           stroke="#FFFAF1"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                        <path
+                           d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z"
+                           stroke="#FFFAF1"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <button
+            class="open-menu"
+            onclick="openMenu()"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+         >
+            <svg
+               width="40"
+               height="40"
+               viewBox="0 0 40 40"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  d="M10 20H30"
+                  stroke="#00856F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+               />
+               <path
+                  d="M10 12H30"
+                  stroke="#00856F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+               />
+               <path
+                  d="M18 28L30 28"
+                  stroke="#00856F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+               />
+            </svg>
+         </button>
+
+         <button
+            class="close-menu"
+            onclick="closeMenu()"
+            aria-expanded="true"
+            aria-label="Fechar menu"
+         >
+            <svg
+               width="40"
+               height="40"
+               viewBox="0 0 40 40"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  d="M30 10L10 30M10 10L30 30"
+                  stroke="#FFFAF1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+               />
+            </svg>
+         </button>
+      </div>
+   </nav>
+
+   <style type="text/css">
+      .contact-sf-form .btn-submit{
+                margin-left: 15px;			
+               color: #0063aa;
+               font-weight: bold;
+               background-color: inherit;
+                margin-right: 0;
+                margin-top: 30px;
+                min-width: 118px;
+                background-color: #fff;
+                border: solid 2px #0063aa;
+                outline: none;		
+               border-radius: 4px;
+               padding: 14px 20px;
+               margin-bottom: 14px;	
+                -webkit-appearance: button;
+                cursor: pointer;	
+               line-height: 1.42857143;
+               text-align: center;
+               white-space: nowrap;
+               vertical-align: middle;	
+               display: inline-block;
+               touch-action: manipulation;
+               user-select: none;
+               background-image: none;		
+                transition: all linear 0.3s;
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                -webkit-transition: all linear 0.3s;
+                -moz-transition: all linear 0.3s;
+                -o-transition: all linear 0.3s;
+                -ms-transition: all linear 0.3s;				    	    			    	
+            }
+            .contact-sf-form .btn-submit:hover{
+                color: #fff;
+                background-color: #0063aa;
+            }
+            .contact-sf-form {
+                padding: 60px 0 0;
+            }	
+            .contact-sf-form .contact-content {
+                padding: 0 150px 30px;
+                background-color: #f6f8f8;
+            }	
+            .contact-sf-form .content-header {
+                padding-top: 30px;
+                padding-bottom: 30px;
+                font-weight: bold;
+                color: #cd1627;		
+                font-size: 26px;   
+               text-align: center;
+               padding-left: 0;
+            }
+            .contact-sf-form .row{
+               margin-top: 20px;
+               margin-bottom: 20px;
+            }
+            .contact-sf-form label{
+               font-size: 18px;
+               font-weight: bold;
+               color: #0061a9;
+               margin-top: 14px;
+            }			
+            .contact-sf-form input,.contact-sf-form select{
+                border-radius: 4px;
+                padding: 14px 20px;
+                border: solid 1px #e0e0e0;
+                margin-bottom: 14px;
+                height: auto;			
+            }
+            .contact-sf-form textarea {
+                width: 100%;
+                border-radius: 4px;
+                padding: 14px 20px;
+                border: solid 1px #e0e0e0;
+                margin-bottom: 30px;
+                 min-height: 148px;
+            }
+            @media only screen 
+               and (min-device-width : 375px) 
+               and (max-device-width : 667px) { 
+               .contact-sf-form .contact-content {
+                   padding: 0 5px 5px;
+               }
+            }
+      
+            .contact-sf-form .form-check-input{
+               height: 25px;
+               width: 25px;
+               padding: 0px;
+               border: solid 5px #e0e0e0;
+               margin-top: 17px;
+               outline: 0!important;
+               margin-right: 5px;
+            }
+            .contact-sf-form .form-check-inline {
+                display: inline-block;
+                margin-right: 1rem;
+            }
+      
+      </style><div class="container">
+      <div class="contact-form contact-sf-form">
+      <div class="contact-content ">
+      <div class="content-header">MAKING YOUR APPOINTMENT!</div>
+      
+      <div class="webform_send_aquire">
+      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"><input name="oid" type="hidden" value="00D5g000003d4TW" /><input name="lead_source" type="hidden" value="Website" /><input name="retURL" type="hidden" value="https://www.hfh.com.vn/thank-you.html" /><!--  ----------------------------------------------------------------------  --><!--  NOTE: These fields are optional debugging elements. Please uncomment    --><!--  these lines if you wish to test in debug mode.                          --><!--  <input type="hidden" name="debug" value=1>                              --><!--  <input type="hidden" name="debugEmail"                                  --><!--  value="technical@omn1solution.com">                                     --><!--  ----------------------------------------------------------------------  -->
+         <input id="UTM_Campaign__c" name="UTM_Campaign__c" type="hidden" value="UTM Campaign" /><input id="UTM_Content__c" name="UTM_Content__c" type="hidden" value="UTM Content" /><input id="UTM_Source__c" name="UTM_Source__c" type="hidden" value="UTM Source" /><input id="Campaign_ID" name="Campaign_ID" type="hidden" value="" /><input id="last_name" maxlength="30" name="first_name" placeholder="Your name" type="hidden" /><div class="mb-3 row"><label class="col-sm-4 col-form-label" for="last_name">Your name</label>
+      
+      <div class="col-sm-8"><input class="form-control" id="last_name" maxlength="40" name="last_name" placeholder="Your name" required="" size="80" type="text" /></div>
+      </div>
+      
+      <div class="mb-3 row"><label class="col-sm-4 col-form-label" for="last_name">Phone number</label>
+      
+      <div class="col-sm-8"><input class="form-control" id="phone" maxlength="40" name="phone" placeholder="Phone number" required="" size="20" type="text" /></div>
+      </div>
+      
+      <div class="mb-3 row"><label class="col-sm-4 col-form-label" for="email">Email</label>
+      
+      <div class="col-sm-8"><input class="form-control" id="email" maxlength="80" name="email" placeholder="Your Email Address" required="" size="20" type="email" /></div>
+      </div>
+      
+      <div class="mb-3 row"><label class="col-sm-4 col-form-label" for="last_name">Faculty</label>
+      
+      <div class="col-sm-8"><select aria-label="Any Time" class="form-select" id="00N5g00000Mparl" name="00N5g00000Mparl"><option selected="selected">- Select -</option><option value="Overall health check">Overall health check</option><option value="Allergy">Allergy</option><option value="Andrology">Andrology</option><option value="Don't know">Don't know</option><option value="Health check to apply for a work permit">Health check to apply for a work permit</option><option value="Dermatology">Dermatology</option><option value="Gastroenterology &amp; Liver Bile">Gastroenterology &amp; Liver Bile</option><option value="Dietetics">Dietetics</option><option value="Odontology &amp; orthodontic">Odontology &amp; orthodontic</option><option value="Diagnostic imaging department">Diagnostic imaging department</option><option value="Gynecology">Diagnostic imaging department</option><option value="Haematology">Haematology</option><option value="Internal medicine">Internal medicine</option><option value="Neurology">Neurology</option><option value="Oncology">Oncology</option><option value="Others">Others</option>
+      </select></div>
+      
+      <div class="mb-3 row"><label class="col-sm-4 col-form-label" for="00N5g00000DWG2i">Appointment time</label>
+      
+      <div class="col-sm-4"><input class="form-control datepicker" onchange="input_datepicker_change(this.value)" onfocus="(this.type='date')" placeholder="1st choice: mm/dd/yyyy" size="12" type="text" /><input id="00N5g00000Mpaqs" name="00N5g00000Mpaqs" size="12" type="hidden" /></div>
+      
+      <div class="col-sm-4"><select aria-label="Any Time" class="form-select" id="00N5g00000Mpaqu" name="00N5g00000Mpaqu"><option selected="selected">Selected</option><option value="07:00:00.000Z">7h</option><option value="08:00:00.000Z">8h</option><option value="09:00:00.000Z">9h</option><option value="10:00:00.000Z">10h</option><option value="11:00:00.000Z">11h</option><option value="12:00:00.000Z">12h</option><option value="13:00:00.000Z">13h</option><option value="14:00:00.000Z">14h</option><option value="15:00:00.000Z">15h</option><option value="16:00:00.000Z">16h</option><option value="17:00:00.000Z">17h</option></select></div>
+      </div>
+      
+      <div class="mb-3 row"><label class="col-sm-4 col-form-label" for="description">Your problems</label>
+      
+      <div class="col-sm-8"><textarea class="form-control" name="description" placeholder="Please typing your problems"></textarea></div>
+      </div>
+      
+      <div style="text-align: right;"><input class="btn-submit" name="submit" type="submit" value="Submit" /></div>
+      </form>
+      </div>
+      </div>
+      </div>
+      </div>
+      <script type="text/javascript">
+      //<!--//--><![CDATA[// ><!--
+      
+      //<!--//--><![CDATA[// ><!--
+      
+               var CampaignID = '7015g000000U7oDAAS';//CampaignID
+               var url_string = window.location.href;
+               var url = new URL(url_string);
+               var utm_source = url.searchParams.get("utm_source");
+               var utm_content = url.searchParams.get("utm_content");
+               var utm_campaign = url.searchParams.get("utm_campaign");
+               document.getElementById("UTM_Source__c").value = utm_source;
+               document.getElementById("UTM_Content__c").value = utm_content;
+               document.getElementById("UTM_Campaign__c").value = utm_campaign;
+               document.getElementById("Campaign_ID").value = CampaignID;
+               
+               function input_datepicker_change(value) {
+                  document.getElementById("00N5g00000Mpaqs").value = format(value);
+               }	
+               function format(inputDate) {
+                   var date = new Date(inputDate);
+                   if (!isNaN(date.getTime())) {
+                       return date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear();
+                   }
+               }			
+         
+      //--><!]]]]><![CDATA[>
+      
+      //--><!]]>
+      </script></div>
+            
+            </div>
+   
+</body>
+</html>
