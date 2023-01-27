@@ -162,12 +162,13 @@
     width: 100vw;
  
     z-index: 100;
+    
  }
  
  nav .wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
  }
  
  nav.scroll {
@@ -222,7 +223,7 @@
     padding-top: var(--nav-height);
  
     transition: transform 300ms;
-    transform: translateY(0%);
+    transform: translateY(0%);   
  }
  
  .menu ul:first-child {
@@ -518,7 +519,7 @@
        display: flex;
        align-items: center;
        justify-content: space-between;
-       width: 60%;
+       width: 65%;
     }
  
     nav#navigation .menu ul:nth-child(1) {
