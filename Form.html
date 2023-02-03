@@ -18,25 +18,34 @@
 <body>
    <nav id="navigation">
       <div class="wrapper">
-         <a class="logo" href="http://127.0.0.1:5500/ASE.html#home">
+         <a class="logo" href="#home">
             <img src="logoHUST_removebg.png" alt="HUSTLogo" width="170" height="50">
          </a>
 
          <div class="menu">
             <ul>
                <li>
-                  <a onclick="closeMenu()" href="http://127.0.0.1:5500/ASE.html#home">Home</a>
+                  <a onclick="closeMenu()" href="ASE.html#home">Home</a>
                </li>
                <li>
-                  <a onclick="closeMenu()" href="http://127.0.0.1:5500/ASE.html#services">Services</a>
+                  <a onclick="closeMenu()" href="ASE.html#services">Services</a>
                </li>
                <li>
-                  <a onclick="closeMenu()" href="http://127.0.0.1:5500/ASE.html#about">About</a>
+                  <a onclick="closeMenu()" href="ASE.html#report">Report</a>
+               </li>
+               <li>
+                  <a onclick="closeMenu()" href="ASE.html#about">About</a>
+               </li>
+               <li>
+                  <a onclick="closeMenu()" href="ASE.html#contact">Contact us</a>
+               </li>
+               <li>
+                  <a onclick="closeMenu()" href="ASE.html#pictures">Pictures</a>
                </li>
             </ul>
 
-            <a class="button" onclick="closeMenu()" href="#contact"
-               >HOTLINE</a
+            <a class="button" onclick="closeMenu()" href="Login.html"
+               >LOGIN</a
             >
 
             <ul class="social-links">
@@ -289,6 +298,7 @@
       <div class="contact-content ">
       <div class="content-header">MAKING YOUR APPOINTMENT!</div>
       
+   <div id="rectangle" style="border: 3px #cd1627 solid; width:300 px; height:500 px; background-color:white">
       <div class="webform_send_aquire">
       <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"><input name="oid" type="hidden" value="00D5g000003d4TW" /><input name="lead_source" type="hidden" value="Website" /><input name="retURL" type="hidden" value="https://www.hfh.com.vn/thank-you.html" /><!--  ----------------------------------------------------------------------  --><!--  NOTE: These fields are optional debugging elements. Please uncomment    --><!--  these lines if you wish to test in debug mode.                          --><!--  <input type="hidden" name="debug" value=1>                              --><!--  <input type="hidden" name="debugEmail"                                  --><!--  value="technical@omn1solution.com">                                     --><!--  ----------------------------------------------------------------------  -->
          <input id="UTM_Campaign__c" name="UTM_Campaign__c" type="hidden" value="UTM Campaign" /><input id="UTM_Content__c" name="UTM_Content__c" type="hidden" value="UTM Content" /><input id="UTM_Source__c" name="UTM_Source__c" type="hidden" value="UTM Source" /><input id="Campaign_ID" name="Campaign_ID" type="hidden" value="" /><input id="last_name" maxlength="30" name="first_name" placeholder="Your name" type="hidden" /><div class="mb-3 row"><label class="col-sm-4 col-form-label" for="last_name">Your name</label>
@@ -322,7 +332,7 @@
       
       <div class="col-sm-8"><textarea class="form-control" name="description" placeholder="Please typing your problems"></textarea></div>
       </div>
-      
+   </div>   
       <div style="text-align: right;"><input class="btn-submit" name="submit" type="submit" value="Submit" /></div>
       </form>
       </div>
